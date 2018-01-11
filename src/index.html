@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title></title>
     <script src="js/vendor.min.js"></script>
-    <!-- <link rel="stylesheet" href="css/vendor.css"> -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnJu7nF_NH6befHT2nGLrGlOLSe-bvE2M&callback=initMap">
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/app.js"></script>
   </head>
   <body>
@@ -12,14 +15,14 @@
       <fieldset>
         <legend>Search for statistics on missing bicycles</legend>
         <label for="zip-input">ZIP code:</label>
-        <input type="text" id="zip-input" required>
+        <input type="text" id="zip-input">
         <label for="proximity-input">Within: (miles)</label>
-        <input type="text" id="proximity-input" required>
+        <input type="text" id="proximity-input">
       </fieldset>
       <fieldset>
         <legend>Search for color(s) of missing bicycles sparated by commas</legend>
-        <label for="color-input">Color(s):</label>
-        <input type="text" id="color-input" required>
+        <label for="colors-input">Color(s):</label>
+        <input type="text" id="colors-input">
       </fieldset>
       <fieldset>
         <legend>Search within a particular time period</legend>
@@ -37,8 +40,8 @@
       </fieldset>
       <button type="submit" name="button">Search!</button>
     </form>
+    <div id="map"></div>
     <div class="output">
-    
     </div>
   </body>
 </html>

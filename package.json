@@ -15,6 +15,7 @@
     "browser-sync": "^2.23.2",
     "browserify": "^15.0.0",
     "del": "^3.0.0",
+    "google-maps": "^3.2.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-jshint": "^2.1.0",
