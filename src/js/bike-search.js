@@ -6,6 +6,7 @@ export let bikeSearch = function(searchType, colors, zip, proximity, startDate, 
   return new Promise(function(resolve, reject) {
     const request = new XMLHttpRequest();
     const url = `https://bikeindex.org:443/api/v2/bikes_search/${slug}`;
+    console.log(url);
     request.onload = function() {
       if (this.status === 200) {
         resolve(request.response);

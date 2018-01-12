@@ -2,10 +2,10 @@ import { bikeSearch } from './../src/js/bike-search.js';
 
 
 $(document).ready(function() {
-  const map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
-  });
+  // const map = new google.maps.Map(document.getElementById('map'), {
+  //   center: {lat: -34.397, lng: 150.644},
+  //   zoom: 8
+  // });
 
 
   // $('#zip-input').val("97232");
@@ -34,7 +34,6 @@ $(document).ready(function() {
       } else if (searchType === 'stolen?') {
         $('.output').empty();
         bikes.bikes.map(function(bike) {
-          console.log(new Date(bike.date_stolen * 1000));
           if (bike.large_img) {
             $('.output').append(`<div class="bike-list-item">
                                   <h3>${bike.title}</h3>
